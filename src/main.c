@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "../include/mysh.h"
 
 int main(void) {
-    printf("Hello, World!\n");
+    mysh_loop();
     return 0;
 }

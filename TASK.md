@@ -8,15 +8,15 @@ Créer un interpréteur de commandes basique en C avec support Docker, Makefile 
 ## 🛠️ Étapes techniques
 
 ### 1. 🧱 Initialisation du projet
-- [ ] Créer la structure de dossiers (src/, include/, tests/)
-- [ ] Créer les fichiers : `main.c`, `mysh.h`, `Makefile`, `Dockerfile`, `.github/workflows/ci.yml`
+- [x] Créer la structure de dossiers (src/, include/, tests/)
+- [x] Créer les fichiers : `main.c`, `mysh.h`, `Makefile`, `Dockerfile`, `.github/workflows/ci.yml`
 
 ### 2. 🔧 Compilation
-- [ ] Écrire le `Makefile` avec les commandes : `all`, `clean`, `fclean`, `re`, `test`, `docker-run`
+- [x] Écrire le `Makefile` avec les commandes : `all`, `clean`, `fclean`, `re`, `test`, `docker-run`
 
 ### 3. 📜 Lecture de commande
-- [ ] Lire une ligne entrée par l'utilisateur (prompt `mysh$ `)
-- [ ] Nettoyer les espaces, gérer les commandes vides
+- [x] Lire une ligne entrée par l'utilisateur (prompt `mysh$ `)
+- [x] Nettoyer les espaces, gérer les commandes vides
 - [ ] Découper la ligne en arguments (`strtok` ou équivalent)
 
 ### 4. ⚙️ Exécution
@@ -24,7 +24,7 @@ Créer un interpréteur de commandes basique en C avec support Docker, Makefile 
 - [ ] Gérer les erreurs (commande introuvable)
 
 ### 5. 🔁 Boucle principale
-- [ ] Répéter le prompt après chaque commande (jusqu'à `exit`)
+- [x] Répéter le prompt après chaque commande (jusqu'à `exit`)
 - [ ] Gérer `Ctrl+C` (signal `SIGINT`) proprement
 
 ---
@@ -44,9 +44,9 @@ Créer un interpréteur de commandes basique en C avec support Docker, Makefile 
 ## 🐳 Docker
 
 ### 8. 🐋 Dockerfile
-- [ ] Écrire un `Dockerfile` basé sur Alpine ou Debian
-- [ ] Copier le code source et compiler le projet
-- [ ] Ajouter une commande `ENTRYPOINT ["./mysh"]`
+- [x] Écrire un `Dockerfile` basé sur Alpine ou Debian
+- [x] Copier le code source et compiler le projet
+- [x] Ajouter une commande `ENTRYPOINT ["./mysh"]`
 
 ### 9. 🧪 Docker + Makefile
 - [ ] Ajouter une règle `docker-build`
@@ -57,8 +57,8 @@ Créer un interpréteur de commandes basique en C avec support Docker, Makefile 
 ## ⚙️ Intégration continue (CI)
 
 ### 10. 📦 GitHub Actions
-- [ ] Créer un fichier `.github/workflows/ci.yml`
-- [ ] Compiler le projet
+- [x] Créer un fichier `.github/workflows/ci.yml`
+- [x] Compiler le projet
 - [ ] Lancer des tests automatiques avec des fichiers d'entrée/sortie
 - [ ] Comparer les résultats avec les fichiers attendus (`diff`)
 

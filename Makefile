@@ -1,13 +1,12 @@
 NAME = mysh
-SRC = src/main.c
+SRC = src/main.c src/mysh.c
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -Iinclude
 
-# Cibles
-all: $(NAME) # Compile le projet avec la commande `make`
+all: $(NAME)
 
-$(NAME): $(SRC)
-	$(CC) $(CFLAGS) -o $(NAME) $(SRC)
+$(NAME):
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
 run: $(NAME)
 	./$(NAME)
@@ -17,13 +16,4 @@ clean:
 
 re: clean all
 
-docker-build:
-	docker build -t mysh .
-
-docker-run:
-	docker run --rm -it mysh
-
-test:
-	@echo "ls > out.txt" | ./$(NAME) && cat out.txt
-
-.PHONY: all run clean re docker-build docker-run test
+.PHONY: all run clean re
