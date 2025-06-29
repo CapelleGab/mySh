@@ -1,7 +1,7 @@
 NAME = mysh
-SRC = src/main.c src/mysh.c
+SRC = src/main.c 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -Iinclude
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
