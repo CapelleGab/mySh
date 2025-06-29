@@ -22,7 +22,6 @@
 ```
 mysh/
 ├── src/              # Code source
-├── include/          # Fichiers d'en-tête
 ├── tests/            # Scripts de tests
 ├── Makefile          # Compilation et gestion
 ├── Dockerfile        # Conteneur d'exécution
